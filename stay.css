@@ -3,10 +3,232 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: aqua;
+.grid{
+    max-width: 1440px;
+    width: 100%;
+    padding: 30px 15px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "logo logo nav button"
+    "wrap footer footer button";
 }
-.imit{
-    text-align: center;
-    text-transform: uppercase;
+.item{
+    width: 100%;
+    padding: 20px;
+}
+.logo{
+    grid-area: logo;
+    background-color: #733FC8;
+    padding: 30px;
+    border-radius: 15px;
+}
+.logom1 img{
+    border-radius: 50px;
+    border: 1px solid rgb(212, 198, 198);
+}
+.logos{
+    display: grid;
+    place-content: start;
+    place-items: center;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+}
+.daniyel1{
+    font-size: 19px;
+    color: white;
+    letter-spacing: 1px;
+}
+.daniyel2{
+    font-size: 19px;
+    color: rgb(212, 198, 198);
+    letter-spacing: 1px;
+}
+.invite1{
+    width: 550px;
+    font-size: 19px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+.invite2{
+    width: 600px;
+    color: rgb(212, 198, 198);
+    line-height: 22px;
+}
+
+
+.nav{
+    grid-area: nav;
+    background-color: #49556B;
+    padding: 30px;
+    border-radius: 15px;
+}
+.navas{
+    display: grid;
+    place-content: flex-start;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+.navvaa1 img{
+    border-radius: 50px;
+    border: 2px solid rgb(212, 198, 198);
+}
+.wasvery1{
+    font-size: 19px;
+    color: white;
+    letter-spacing: 1px;
+}
+.wasvery2{
+    font-size: 19px;
+    color: rgb(212, 198, 198);
+    letter-spacing: 1px;
+}
+.andkept1{
+    width: 250px;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+.andkept2{
+    width: 230px;
+    color: rgb(212, 198, 198);
+    line-height: 22px;
+}
+
+
+.button{
+    grid-area: button;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.buttonns img{
+    border-radius: 50px;
+    border: 2px solid rgb(212, 198, 198);
+}
+.evebutton1{
+    font-size: 19px;
+    color: black;
+    letter-spacing: 1px;
+}
+.evebutton2{
+    font-size: 19px;
+    color: rgb(212, 198, 198);
+    letter-spacing: 1px;
+}
+.buttooon1{
+    width: 250px;
+    font-size: 19px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+.buttooon2{
+    width: 230px;
+    color: rgb(36, 33, 33);
+    line-height: 22px;
+}
+
+
+.wrap{
+    grid-area: wrap;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.wraape1{
+    font-size: 19px;
+    color: rgb(39, 38, 38);
+    letter-spacing: 1px;
+}
+.wraape2{
+    font-size: 19px;
+    color: rgb(212, 198, 198);
+    letter-spacing: 1px;
+}
+.wrapee1{
+    width: 250px;
+    font-size: 19px;
+    color: rgb(109, 103, 103);
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+.wrapee2{
+    width: 230px;
+    color: rgb(175, 152, 152);
+    line-height: 22px;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #18202D;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1350px) {
+    .grid{
+        width: 660px;
+        margin: 20px auto;
+        padding: none;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "wrap"
+        "footer"
+        "button";
+    }
+    .andkept1{
+        width: 400px;
+    }
+    .andkept2{
+        width: 430px;
+    }
+    .buttooon1{
+        width: 400px;
+    }
+    .buttooon2{
+        width: 550px;
+    }
+    .wrapee1{
+        width: 400px;
+    }
+    .wrapee2{
+        width: 400px;
+    }
+}
+@media screen and (max-width:750px) {
+    .grid{
+        width: 620px;
+        margin: 20px auto;
+        padding: none;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "wrap"
+        "footer"
+        "button";
+    }
+    .invite1{
+        width: 350px;
+    }
+    .invite2{
+        width: 400px;
+    }
+    .buttooon1{
+        width: 330px;
+    }
+    .buttooon2{
+        width: 450px;
+        color: darkred;
+    }
+
 }
